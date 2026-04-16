@@ -6,17 +6,13 @@ import org.junit.jupiter.api.Test;
 public class AppTest {
 
     @Test
-    void testGradeA() {
-        assertEquals("A", App.calculateGrade(95));
+    void testavailableA() {
+        assertEquals("Issued", App.bookAvailable(true));
     }
 
     @Test
-    void testGradeB() {
-        assertEquals("B", App.calculateGrade(80));
+    void testavailableB() {
+        assertEquals("Not Issues", App.bookAvailable(false));
     }
 
-    @Test
-    void testGradeFail() {
-        assertEquals("F", App.calculateGrade(30));
-    }
 }
